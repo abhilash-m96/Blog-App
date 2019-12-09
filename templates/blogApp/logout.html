@@ -1,0 +1,6 @@
+{% extends "blogApp/base.html" %}
+{% load socialaccount %}
+{% block content %}
+  <h3>You have been logged out!</h3>
+  <legend><a href="{% provider_login_url "google" %}">Login Again?</a></legend>
+{% endblock content %}
